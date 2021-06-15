@@ -11,5 +11,7 @@ $link-color: #a51417;
   src: url("{{ site.url }}/assets/fonts/SourceSansPro-Regular.otf");
 }
 
+$base-font-family: “Source Sans” !default;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
