@@ -10,7 +10,7 @@ classes:
   - solid-header-formatting
 
 feature_row:
-  - image_path: assets/images/people/Setton.jpg
+  - image_path: "/assets/images/people/Setton.jpg"
     alt: "Picture of Kristian"
     title: "Lori Setton"
     excerpt: "Principal Investigator"
