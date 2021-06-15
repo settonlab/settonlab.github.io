@@ -74,5 +74,4 @@ feature_row:
     btn_label: "Personal Website"
     btn_class: "btn--primary"
 ---
-{% include carousel.html height="50" unit="%" duration="7" %}
 {% include feature_row %}
