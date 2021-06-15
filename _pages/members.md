@@ -1,6 +1,7 @@
 ---
 permalink: /members/
 title: "Members"
+layout: single
 
 header:
   overlay_color: "#4e2a84"
