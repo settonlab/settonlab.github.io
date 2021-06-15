@@ -4,7 +4,6 @@ title: "Members"
 layout: single
 
 header:
-  overlay_color: "#4e2a84"
   overlay_filter: "0.0"
   overlay_image: /assets/images/group.jpg
 
