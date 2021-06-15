@@ -77,7 +77,7 @@ feature_row:
 ---
 # Principal Investigator
 
-[![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/Setton.jpg)](https://engineering.wustl.edu/faculty/Lori-Setton.html){: .align-left}
+[![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/Setton.jpg)](https://engineering.wustl.edu/faculty/Lori-Setton.html){: .align-left}{: height="100"}
 ### [**Lori Setton**](https://www.danforthcenter.org/our-work/principal-investigators/r-keith-slotkin/)  
 Department Chair, [Biomedical Engineering](https://bme.wustl.edu/index.html)  
 Lucy & Stanley Lopata Distinguished Professor of Biomedical Engineering
@@ -93,5 +93,5 @@ Lucy & Stanley Lopata Distinguished Professor of Biomedical Engineering
 
 <br>
 # Current Members
-
+<br>
 {% include feature_row %}
