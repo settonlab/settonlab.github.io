@@ -8,7 +8,7 @@ $link-color: #a51417;
 
 @font-face {
   font-family: "SourceSansPro";
-  src: url("../assets/fonts/SourceSansPro-Regular.otf")
+  src: url("{{ site.url }}/assets/fonts/SourceSansPro-Regular.otf");
 }
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
