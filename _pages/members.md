@@ -5,7 +5,6 @@ title: "Members"
 header:
   overlay_color: "#4e2a84"
   overlay_filter: "0.0"
-  overlay_image: /assets/images/group.jpg
 
 classes:
   - solid-header-formatting
@@ -93,5 +92,5 @@ feature_row:
     title: "Sarah Loehr"
     excerpt: "Research Specialist, Machine Learning Impact Initiative"
 ---
-
+{% include carousel.html height="50" unit="%" duration="7" %}
 {% include feature_row %}
