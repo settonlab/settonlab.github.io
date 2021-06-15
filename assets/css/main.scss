@@ -6,5 +6,10 @@ $link-color: #a51417;
 
 @charset "utf-8";
 
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("../assets/fonts/SourceSansPro-Regular.otf")
+}
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
