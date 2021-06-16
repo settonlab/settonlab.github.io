@@ -2,7 +2,6 @@
 permalink: /members/
 title: "Members"
 layout: single
-categories: pages
 
 header:
   overlay_filter: "0.0"
