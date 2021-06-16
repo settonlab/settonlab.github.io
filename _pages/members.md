@@ -2,6 +2,7 @@
 permalink: /members/
 title: "Members"
 layout: single
+categories: pages
 
 header:
   overlay_filter: "0.0"
@@ -10,37 +11,26 @@ header:
 classes:
   - solid-header-formatting
 
-feature_row:
-  - image_path: "/assets/images/people/Setton.jpg"
-    alt: "Picture of Kristian"
-    title: "Lori Setton"
-    excerpt: "Principal Investigator"
-    url: "https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/hammond-kristian.html"
-    btn_label: "Personal Website"
-    btn_class: "btn--primary"
+current_members:
   - image_path: "/assets/images/people/Jing.jpg"
-    alt: "Picture of Frank"
     title: "Liufang Jing"
     excerpt: "Research Analyst"
     url: "http://rachelfadler.com/"
     btn_label: "Personal Website"
     btn_class: "btn--primary"
   - image_path: "/assets/images/people/Lee.png"
-    alt: "Picture of Frank"
     title: "Frank Lee"
     excerpt: "Postdoc"
     url: "http://rachelfadler.com/"
     btn_label: "Personal Website"
     btn_class: "btn--primary"
   - image_path: /assets/images/people/patil.jpg
-    alt: "Picture of Mohammed"
     title: "Deepanjali Patil"
     excerpt: "Postdoc"
     url: "http://mohammedalam.weebly.com/"
     btn_label: "Personal Website"
     btn_class: "btn--primary"
   - image_path: /assets/images/people/rohanifar.png
-    alt: "Picture of Andrew"
     title: "Milad Rohanifar"
     excerpt: "Postdoc"
     url: "https://www.andrewpaley.dev"
@@ -94,4 +84,4 @@ Lucy & Stanley Lopata Distinguished Professor of Biomedical Engineering
 <br>
 # Current Members
 <br>
-{% include feature_row %}
+{% include feature_row id="current_members" class="full" %}
