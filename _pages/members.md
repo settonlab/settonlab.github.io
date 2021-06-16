@@ -18,14 +18,14 @@ feature_row:
     url: "https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/hammond-kristian.html"
     btn_label: "Personal Website"
     btn_class: "btn--primary"
-  - image_path: /assets/images/people/Jing.jpg
+  - image_path: "/assets/images/people/Jing.jpg"
     alt: "Picture of Frank"
     title: "Liufang Jing"
     excerpt: "Research Analyst"
     url: "http://rachelfadler.com/"
     btn_label: "Personal Website"
     btn_class: "btn--primary"
-  - image_path: /assets/images/people/Lee.png
+  - image_path: "/assets/images/people/Lee.png"
     alt: "Picture of Frank"
     title: "Frank Lee"
     excerpt: "Postdoc"
