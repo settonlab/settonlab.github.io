@@ -7,8 +7,8 @@ $link-color: #a51417;
 @charset "utf-8";
 
 @font-face {
-  font-family: "Source Sans";
-  src: url("{{ site.url }}/assets/fonts/SourceSansPro-Regular.otf");
+  font-family: "SourceSansPro-Regular";
+  src: url(assets/fonts/SourceSansPro-Regular.otf);
 }
 
 $base-font-family: “Source Sans” !default;
