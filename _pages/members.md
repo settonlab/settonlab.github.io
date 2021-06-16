@@ -10,59 +10,6 @@ header:
 classes:
   - solid-header-formatting
 
-current_members:
-  - image_path: "/assets/images/people/Jing.jpg"
-    title: "Liufang Jing"
-    excerpt: "Research Analyst"
-    url: "http://rachelfadler.com/"
-    btn_label: "Personal Website"
-    btn_class: "btn--primary"
-  - image_path: "/assets/images/people/Lee.png"
-    title: "Frank Lee"
-    excerpt: "Postdoc"
-    url: "http://rachelfadler.com/"
-    btn_label: "Personal Website"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/people/patil.jpg
-    title: "Deepanjali Patil"
-    excerpt: "Postdoc"
-    url: "http://mohammedalam.weebly.com/"
-    btn_label: "Personal Website"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/people/rohanifar.png
-    title: "Milad Rohanifar"
-    excerpt: "Postdoc"
-    url: "https://www.andrewpaley.dev"
-    btn_label: "Personal Website"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/people/Davis.jpg
-    alt: "Picture of Sergio"
-    title: "Alexandra Davis"
-    excerpt: "PhD Student"
-    url: "https://www.servantez.ai/"
-    btn_label: "Personal Website"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/people/Tan.jpeg
-    alt: "Picture of Alex"
-    title: "Xiaohong Tan"
-    excerpt: "PhD Student"
-    url: "https://alexandereinarsson.github.io/"
-    btn_label: "Personal Website"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/people/Johnston.jpg
-    alt: "Picture of Andong"
-    title: "Ben Johnston"
-    excerpt: "Research Technician"
-    url: "https://andongluis.github.io/"
-    btn_label: "Personal Website"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/people/Lu.jpg
-    alt: "Picture of Marko"
-    title: "Mike Lu"
-    excerpt: "Undergraduate"
-    url: "https://www.markosterbentz.com/"
-    btn_label: "Personal Website"
-    btn_class: "btn--primary"
 ---
 # Principal Investigator
 
@@ -80,7 +27,33 @@ Lucy & Stanley Lopata Distinguished Professor of Biomedical Engineering
 <a title="Twitter" href="https://twitter.com/setton_lab">
   <i class="fab fa-fw fa-twitter" style="color:#00acee"></i></a>
 
-<br>
-# Current Members
-<br>
-{% include feature_row id="current_members" class="full" %}
+<div class="section">
+  <h2><a id="members">Members</a></h2>
+</div>
+
+<div class="grid__wrapper">
+  {% for author in site.data.authors %}
+      <div class="grid__item">
+        <div style="max-height: 240px" class="archive__item-teaser">
+            <a href="{{author.uri}}">
+              <img src=
+                {% if author.avatar contains "://" %}
+                  "{{ author.avatar }}"
+                {% else %}
+                  "{{ author.avatar | absolute_url }}"
+                {% endif %}
+                 alt="{{ author.name }}">
+            </a>
+        </div>
+          <h2 class="archive__item-title" itemprop="headline">
+            {% if author.name %}
+              <a href="{{ author.uri }}">{{ author.name }}</a> <a href="{{ author.uri | absolute_url }}" rel="permalink" target="_blank"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+            {% else %}
+              <a href="{{ author.uri | absolute_url }}" rel="permalink" target="_blank">{{ author.name }}</a>
+            {% endif %}
+          </h2>
+          {% if author.bio %}<p class="archive__item-excerpt" itemprop="description">{{ author.bio | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+    </div>
+  {% endfor %}
+
+</div>
